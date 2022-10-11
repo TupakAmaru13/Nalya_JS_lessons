@@ -1,13 +1,10 @@
-
-
 //this function will greet customer
 //name- to enter the customer's name
 function greetCustomer(name){
     let greetings = `Hi, ${name}! \nWelcome to our self-coffee!\n`
-     console.log(greetings)
+    console.log(greetings)
 }
 greetCustomer("Anna")
-
 
 //this function will set appropiate coffee recipe
 //coffeeType - to enter the coffeeType that customer wants
@@ -19,23 +16,29 @@ function setCoffeeRecipe(coffeeType){
     else if (coffeeType == 'Latte'){
         chosenCoffee = coffeeRecipe.replace('water', 'hot water')
     }  
-    else (chosenCoffee = "Sorry, we don't have this coffee type right now" )                 
+    else (chosenCoffee = "Sorry, we don't have this coffee type right now" )    
 
     return chosenCoffee 
 }
 console.log(setCoffeeRecipe('IcedCoffee'))
 
 //this function will set the price accordingly to cup size 
-function showPrice(cupSize){
-    let price= 10
+function setCoffeePrice(cupSize) {
+    let price = 10
     if (cupSize == 'medium') {
-        price *= 1.5   
+        price *= 1.5
     }
     else if (cupSize == 'large') {
-        price *= 2   
+        price *= 2
     }
-       
-    return console.log(`The order price is ${price}$`)
+    return price
 }
-showPrice("small")
+//console.log(setCoffeePrice("small"))
+
+//this function will show coffee price to customer
+function showCoffeePrice(cupSize){
+    let price = setCoffeePrice(cupSize)
+    console.log(`The order price is ${price}$`)
+}
+showCoffeePrice("small")
 

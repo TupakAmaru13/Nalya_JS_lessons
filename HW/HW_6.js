@@ -11,20 +11,23 @@ example:  function calculate(a, b, operator){}
 
 function calc(a, b, sign){
    let result = 0
-   if(sign == "+") result = a + b
-   else if (sign == "-") result = a - b
-   else if (sign == "*") result = a * b
-   else if (sign == "/" && b == 0) { 
-      result = "Division by 0 is not allowed! Enter another number"
+   if(isNaN(a) || isNaN(b)) result = "Please, enter a number!"
+   else{
+      if (sign == "+") result = a + b
+      else if (sign == "-") result = a - b
+      else if (sign == "*") result = a * b
+      else if (sign == "/" && b == 0) {
+         result = "Division by 0 is not allowed! Enter another number"
+      }
+      else if (sign == "/" && b != 0) result = a / b
+      else (result = "Please, enter right input!")
    }
-   else if (sign == "/" && b != 0) result = a / b 
-   else( result = "Please, enter right input")
    return result
 }
 
-console.log(calc(2, 0, "/"))
+console.log(calc(2, 4, "dfd"))
 
 /**
- * Напишите функцию, которая создает и выводит в консоль кастомное приветствие с именем, которое вы передаете в функцию.
+ *3. Напишите функцию, которая создает и выводит в консоль кастомное приветствие с именем, которое вы передаете в функцию.look coffeeFunction
 
  */
