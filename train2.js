@@ -5,3 +5,10 @@
 //    return "You're a(n) elderly"
 // }
 // console.log(describeAge(12))
+
+//let regex = new RegExp()
+// let str = "Hello World!"
+// let regex = /world/gi
+// let result = str.match(regex)
+
+// console.log(result)

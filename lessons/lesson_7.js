@@ -19,15 +19,15 @@
 //=== split(); делит строку по указанному разделителю, возвращает массив
 // split("");  => возвращает массив _всех_ символов
 
-// let string = "Hello World";
-// console.log(string);
+let string = "Hello- World";
+console.log(string);
 
-// console.log(string.split(" "));
-//let stringNew = string.split(" ")
-//console.log(stringNew);
+console.log(string.split(" "));
+let stringNew = string.split(" ")
+console.log(stringNew);
 
-// let newArrayFromString = string.split(" ")
-// console.log(newArrayFromString);
+let newArrayFromString = string.split("")
+console.log(newArrayFromString);
 
 
 // === join(); конвертирует массив в строку, по умолчанию 

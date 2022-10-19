@@ -46,13 +46,66 @@
 
 //    console.log(i)//вывели каждую цифру на новой строке
 // }
-n = [1,2,3,4,5]
-let newString = n.toString()
-let newArr = newString.split()
-let newArr2 = []
+// n = [1,2,3,4,5]
+// let newString = n.toString()
+// let newArr = newString.split()
+// let newArr2 = []
 
-   let a = newArr.pop()
-   console.log(a)
-   newArr2.push(a)
-  // console.log(newArr2)
- //  return newArr2
+//    let a = newArr.pop()
+//    console.log(a)
+//    newArr2.push(a)
+//   // console.log(newArr2)
+//  //  return newArr2
+
+//try:
+// let s = [12,55,78]
+// function numObj(s) {
+//    let str = s.toString()
+//    let arr = []
+//    for (let el in s) {
+//       let obj = {}
+//       obj[el] = str.charCodeAt(el)
+//       arr.push(obj)
+//    }
+//    return arr
+// }
+// console.log(numObj(s))
+// ///the right one:
+// function numObj(s) {
+//    let str = s.toString()
+//    let arr = []
+//    for (let el in s) {
+//       let obj = {}
+//       obj[s[el]] = String.fromCharCode(s[el])
+//       arr.push(obj)
+//    }
+//    return arr
+// }
+
+//reverse number 345-> 543 or -123 -> -321
+
+function reverseNum(num){
+   let str = "" + Math.abc(num)
+   return Math.sign(num)* (str.split('').reverse().join())
+}//                          array        reverse  string
+
+modules.exports = reverseNum()
+console.log(reverseNum(-76))
+
+// simple object with some properties
+const coder = {
+   isStudying: false,
+   printIntroduction: function () {
+      console.log(`My name is ${this.name}. Am studying?: ${this.isStudying}.`)
+   }
+}
+// Object.create() method
+const me = Object.create(coder);
+
+// "name" is a property set on "me", but not on "coder"
+me.name = 'Mukul';
+
+// Inherited properties can be overwritten
+me.isStudying = true;
+
+me.printIntroduction();
