@@ -1,3 +1,3 @@
 # JS_Lessons
 
-This is study files for beginners
+These are study files for beginners
