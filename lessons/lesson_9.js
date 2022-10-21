@@ -8,7 +8,7 @@
 //Show oop presentation in Miro
 
 //1. We can create an object by Object Literal  => look at scriptProto.js
-//2. We can create an object by using a constructor function => look at constractor function.js
+//2. We can create an object by using a constructor function => look at constractorFunction.js
 //3. We can create an object by using new and class keywords
 
 // Object.create() one of examples how to create an object, but we are not going to consider it here
@@ -113,7 +113,7 @@ console.log(mammal2.getName())
 // student.greet();
 // console.log(student.occupation)
 
-// //show export and import via sandwich file
+// //show export and import via sandwich and sandwichClass files
 
 
 
