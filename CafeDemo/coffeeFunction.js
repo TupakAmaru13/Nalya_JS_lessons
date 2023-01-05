@@ -1,3 +1,5 @@
+let chosenCoffee = ''
+
 //this function will greet customer
 //name- to enter the customer's name
 function greetCustomer(name){

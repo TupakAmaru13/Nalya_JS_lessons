@@ -1,7 +1,4 @@
 {
-   "name": "NShakiro",
-   "version": "1.0.0",
-   "description": "JS lesson by NShakiro",
-   "main": "index.js",
+   
    "type": "module"
 }
