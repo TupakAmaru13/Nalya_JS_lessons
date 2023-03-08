@@ -80,3 +80,4 @@ if ((distance += dayDistance) <= wall) {
 
 // if (distance == wall) console.log('Ok')
 
+//for PR
