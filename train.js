@@ -1,22 +1,24 @@
 // const prompt = require('prompt-sync')();  //for terminal
 // const name = prompt("What's your name?");
 // console.log(`Hi there ${name}`);
-// const readline = require('readline').createInterface({
-//    input: process.stdin,
-//    output: process.stdout
+// // const readline = require('readline').createInterface({
+// //    input: process.stdin,
+// //    output: process.stdout
+// // });
+
+// question('Who are you?', name => {
+//    console.log(`Hey there ${name}!`);
+//    close();
 // });
 
-// readline.question('Who are you?', name => {
-//    console.log(`Hey there ${name}!`);
-//    readline.close();
-// });
 // const input = prompt("What's your name?"); //optional params
 // console.log(input); 
-// const readline = require("readline");
-// let rl =""
-// rl.question("What is your name? ", function (answer) {
-//    console.log(`Oh, so your name is ${answer}`);
-// });
+
+let rl =""
+rl.question("What is your name? ", function (answer) {
+   console.log(`Oh, so your name is ${answer}`);
+});
+
 // const prompt = require('prompt-sync')();  //for terminal
 // const name = prompt("What's your name?");
 // let input = readline()

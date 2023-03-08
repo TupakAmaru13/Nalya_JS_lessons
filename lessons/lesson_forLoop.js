@@ -17,7 +17,7 @@
 
 // }
 
-// for (let i =0; i <= 3  ; i++) {  // не работает -вопрос, почему?
+// for (let i = 0; i <= 3  ; i++) {  
 //   console.log(i);
   
 // }
@@ -33,24 +33,26 @@
 
 // ------------ repeat string
 
-// let str = "Hello"; // repeat 7
+// let str1 = "+/ "; // repeat 7
 // let newStr = "";
-// for (let i = 0; i < 7; i++) { //  0 1 2 3 4 5 6
-//   newStr = newStr + str;
-  
+// let i
+// for (i = 0; i < 7; i++) { //  0 1 2 3 4 5 6
+//    // newStr = newStr + str1;
+//    // console.log(str1 + i);
 // }
-// console.log(newStr);
+// console.log(str1 + i);
 
 
 
 
 // ------------ find sum
 
-// let sum = 0;
-//  for (let i = 1; i <= 10; i++) {  
-//   sum = sum + i;
-//   console.log(sum);
-// }  
+let sum = 0;
+ for (let i = 1; i <= 10; i++) { // 1 sum = 1: i=2 sum = 3; i = 3 sum = 6
+  sum += i;  // 1+2+3+4+5+6+7+8
+  
+} 
+//console.log(sum); 
 //  0 + 1 = sum 1          //1
 //  sum 1 + (i 2) = sum 3  //2
 //  sum 3 + (i 3) = sum 6  //3
@@ -62,10 +64,17 @@
 // let num = 5;  //  ^3
 // let result = 1 ;
 // for (let i = 1 ; i <= 3; i++) {    // i = 1.  result = 1 * 5 = 5
-//   result = result * num;          // i = 2.  result = 5 * 5 = 25
-//     }                             // i = 3   result = 25 * 5 = 125
-// console.log(result);
+//     result = result * num; 
+//     console.log(result);           // i = 2.  result = 5 * 5 = 25
+// }                                  // i = 3   result = 25 * 5 = 125
+//console.log(result);
 
+let str3 = "Hello!" //  ^3
+let result 
+for (let i = 1; i <= str3.length; i+=2) {    //str3.length = 6
+    result  = i
+    console.log(result);           // i = 1 <1>;i = 3 <3>;i = 5 <5>; i = 7
+}     
 
 // ------------ change string
 
