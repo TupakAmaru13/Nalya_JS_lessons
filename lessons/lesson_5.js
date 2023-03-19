@@ -9,40 +9,45 @@
 // }
 
 // let i = 0
-// while (i < 3) {   
+// while (i < 3) {
 //   console.log(i);
 //   i++
 // }
 
-// let j = 7
-// while (j != 0) {
-//   console.log(j);
-//   j--
+// let i = 7
+// while (i != 0) {
+//   console.log(i);
+//    i--
 // }
 
 
 
-// const fruits = ['apple', 'pears', 'plums', 'grape']
-// let index = 0
-// while (index < fruits.length){
-//     console.log(fruits[index])
-//     index++
+//  const fruits = ['apple', 'pears', 'plums', 'grape']
+
+// let i = 0
+// while (i > fruits.length){
+//     console.log(fruits[i])
+//     i++
 // }
 
 // ================= do ... while
 
 // do {
 //   // code block
-// } while (condition);
+// }
+//while (condition);
 
 
 // let k = 0;
 //  do {
 //   console.log( k );
-//   k++;
-// } while (k > 3)
+//   k++; //k=1
+// } while (k < 3)
 
-//example in replit
+// if (k < 3) {
+//   console.log("if "+ k);
+// }
+// else console.log('Do something')
 
 
 
@@ -55,16 +60,26 @@
 // продолжает выполнение цикла со следующей итерации
 
 // for (let i = 0; i <= 10; i++) {
-  
-//   if ( i == 7 ) break;
-//   console.log(i);
-  
-// }
+ 
+//   if (i == 7) {
+//     break
+//   } 
+//   console.log(i)
+// // }
+// let fruits = ['apple', 'pears', 'plums', 'grape', 'watermelone']
 
-// for (let i = 0; i <= 100; i++) {
-  
-//   if ( i % 2 === 0) continue;//
-//     console.log(i);
+// for (let i = 0; i < fruits.length; i++) {
+
+//   if (fruits[i] == 'plums') {
+//     console.log('haker attack')
+//     break
+//   } 
+
+//   if (fruits[i]=='grape') {
+//     continue 
+//   } 
+//   console.log(fruits[i]);
+ 
 // }
 
 
@@ -76,11 +91,41 @@
 // условие ? выражение1 : выражение2
 
 
-// for (let i = 0; i < 10; i++) { 
-//     (i < 5) ? console.log(i) : continue; 
+// for (let i = 0; i < 10; i++) {
+
+//   (i < 5) ? console.log(i) : console.log("Hello");
 // }
 // let a = 7;
 // (a < 5) ? console.log(a) : console.log("Hi");
+
+
+//================== FOR IN =============
+/**
+ * for (key in object) {
+  // code block to be executed
+}
+ */
+// const numbers = [45, 4, 9, 16, 25];
+// let str = 'Hello'
+// let txt = "";
+// for (let i = 3; i < str.length; i++) {
+ 
+//  // txt += numbers[el];
+//   console.log(str[i])
+// }
+// console.log(txt)
+
+// const cars = "BMW, Volvo, Mini";
+
+// let text = "";
+// for (let x of cars) {
+//  // text += x;
+//   console.log(x)
+// }
+
+
+
+
 
 
 
@@ -104,35 +149,38 @@
 //     let str = "";
 //   for (let numInLine = 1; numInLine <= line ; numInLine++) {
 //     str += numInLine
-     
+
 //   }
- 
+
 //     console.log(str);
 // }
 
-for (let i = 5; i >= 1; i--) { //отвечает за количество строк
-  let str = "";
-  for (let j = i ; j >= 1 ; j--) { //отвечает за наполнение строки
-    
-    str = str + j; 
-  }
-    
-    console.log(str);
-}
+// for (let i = 5; i >= 1; i--) { //отвечает за количество строк
+//   let str = "";
+//   for (let j = i; j >= 1; j--) { //отвечает за наполнение строки
+
+//     str = str + j;
+//   }
+
+//   console.log(str);
+// }
 //  if (i == 2) continue;
 //как достать элемент из вложенного массива
 
 
 //
-// let arr = [1, ["a", 'b', [5, 7]], 3, "Herro ok"]
-// //         0   ________________   2     3
+ let arr = [1, ["a", 'b', [5, 4]], 3, "Herro ok"]
+// //        0   ________________   2     3
 // //                  1
 // //                       ______
-// //              0    1      2
-// //                        0  1 
+// //            0    1      2
+// //                      0  1
 // console.log(typeof arr[3])
-// //let str = 
-//     console.log(arr[3][5])
+// //let str =
+arr[1][1] = 'R'
+console.log(arr[1][1])
+     
+
 //как проверить пустой массив
 
 // let arr2 = [1, 3]
@@ -141,6 +189,30 @@ for (let i = 5; i >= 1; i--) { //отвечает за количество ст
 // if (arr2.length == 0){
 //     console.log("it's empty")
 // }
+
+
+
+// ============= изменение элемента в массиве
+
+// const trees = ["maple", "pine", "oak", "aspen"];
+
+// console.log(trees);
+// trees[1] = "ash";
+// console.log(trees);
+
+
+// trees[5] = "birch";
+// console.log(trees, trees.length);
+
+
+
+
+
+
+
+
+
+
 
 //From replit
 //=========================================
@@ -196,11 +268,11 @@ for (let i = 5; i >= 1; i--) { //отвечает за количество ст
 // let result = sum(1, 3) + 5
 // console.log(result)
 //console.log(a) /
-function print(arg) {
-  console.log(arg);
-}
+// function print(arg) {
+//   console.log(arg);
+// }
 
-// // print([1, 2, 3]);
+// // // print([1, 2, 3]);
 
 // // print("abcde");
 // // print([1, 2, 3]);
@@ -307,12 +379,12 @@ function print(arg) {
 
 
 //  ===================  arrow functions
-let sum = (a, b) => {
+// let sum = (a, b) => {
 
-  return `Your numbers are: ${a} , ${b} and sum = ` + (a + b)
-};
+//   return `Your numbers are: ${a} , ${b} and sum = ` + (a + b)
+// };
 
-console.log(sum(3, 9));
+// console.log(sum(3, 9));
 //console.log()
 
 // let toPay = (price, weight) => price * weight;

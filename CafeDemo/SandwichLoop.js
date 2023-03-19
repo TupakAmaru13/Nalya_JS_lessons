@@ -35,22 +35,22 @@ let result = `Your ${sandwich} is ready!`
 
 // усложняем 
 
-let price = 10
-let count = 1
-while(topping != salmon) {
-    console.log("Order price is: $" + price )
-    count++
-}
-{ console.log("Order price is: $" + price * 1.5) }
+// let price = 10
+// let count = 1
+// while(topping != salmon) {
+//     console.log("Order price is: $" + price )
+//     count++
+// }
+// { console.log("Order price is: $" + price * 1.5) }
 
 // if (topping != turkey) {
 //     console.log( "Sorry, we don\’t have that option now!")
 // }
 
 
-// let menu = [turkeySandwich, pepperoniSandwich, salmonSandwich ]
-// for(let i= 0; i < menu.length; i++){
-//    // let menuItems ...
-//     console.log(menuItems)
-// }
+let menu = [turkeySandwich, pepperoniSandwich, salmonSandwich ]
+for(let i= 0; i < menu.length; i++){
+   // let menuItems ...
+    console.log(menuItems)
+}
 
