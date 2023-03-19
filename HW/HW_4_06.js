@@ -1,169 +1,133 @@
-/*
- * 1. Напишите программу калькулятора со switch, обработайте возможные ошибки ввода 
- */
 
-let num1 = 11
-let num2 = 0
-let operator = '&'
-
-switch (operator) {
-  case "+":
-    result  = num1 + num2
-    console.log("The result is " + result) 
-    break
-  case "-":
-    result = num1 - num2
-    console.log("The result is " + result)
-    break
-  case "*":
-    result = num1 * num2
-    console.log("The result is " + result)
-    break
-  case "/":
-    if (num2 != 0) result = num1 / num2
-    else result = "you can't divide by 0"
-    console.log("The result is " + result)
-    break
-   
-  default: 
-  //  console.log("Unknown operation, please enter correct operator!");
-}
-
-
-
-//============3. При помощи цикла for выведите чётные числа от 2 до 10
-// for(let i = 2; i <= 10; i+=2){
-//     console.log( i)
-// }
-// console.log('------------------------------------')
-
-// for (let i = 1; i <= 10; i ++) {
-//     if(i % 2 == 0) {
-//         console.log(i)
-//     }
-// }
-
-
-
-//================ 4. Задача с интервью*====================================
-
-//У вас есть массив со скобками, предположим [ ‘(‘, ‘)’, ‘(‘, ‘)’, ‘)’] ,
-//количество элементов и последовательность может быть разной.
-//Нужно выяснить, у каждой ли скобки есть соответствующая пара(открывающая и закрывающая).
-
-let sum1 = 0
-let sum2 = 0
+//====================== HW#4 Part2 ===========================
+let countOpen = 0
+let countClose = 0
+let result = 0
 
 //let arr = ['(', ')', '(', ')', ')']
-let arr = ['(', ')', '(', ')', '{', '(', '}', ')', 2, 'a']
+//let myArr =['(', ')', '(', '(', '(', ')', '}', '(', ')', ')']
+//let myArr = [')', '(', '(', '(', ')', '(', ')', ')', '(', ')']
 
-for (let i = 0; i < arr.length; i++) {
+// for (let i = 0; i < myArr.length; i++) {
 
-    if (arr[i] == '(') {
-        sum1 += 1
-    }
-    else if (arr[i] == ')') {
-        sum2 += 1
-    }
+//   if (myArr[i] == '(') countOpen += 1
+//   else if (myArr[i] == ')')  countClose += 1
+
+//   result = countOpen - countClose
+//   if (result < 0) {
+//     console.log("Wrong sequance")
+//     break
+//   }
+//   console.log(result)
+// }
+
+// if (countOpen == countClose) {
+//   console.log('equal')
+// }
+// else console.log('not equal')
+
+
+
+//=============================== VAR 2
+
+// for (let i = 0; i < myArr.length; i++) {
+
+//   if (myArr[i] == '(') result++
+//   else if (myArr[i] == ')') result--
+
+//   if (result < 0) {
+//     console.log( "Wrong sequance")
+//     break
+//   }
+
+//  // console.log(result)
+// }
+
+// if (result == 0 )  console.log('Equal')
+// else if (result > 0) console.log('Not equal')
+
+
+
+//=========================== VAR 3 
+
+let result2 = 0
+let result3 = 0
+
+let myArr = ['{', '(', '(', ')', ')', '}', '[', ']', ')']
+for (let i in myArr) {
+
+   if (myArr[i] == '(') result++
+   else if (myArr[i] == ')') result--
+
+   // if (result < 0) {
+   //   console.log("Wrong sequance of '()'")
+   //   break
+   // }
+   //
+   if (myArr[i] == '{') result2++
+   else if (myArr[i] == '}') result2--
+
+   // if (result2 < 0) {
+   //   console.log("Wrong sequance of '{}'")
+   //   break
+   // }
+   //
+   if (myArr[i] == '[') result3++
+   else if (myArr[i] == ']') result3--
+
+   if (result3 < 0 || result < 0 || result2 < 0) {
+      console.log("Wrong sequance  ")//of '[]'
+      break
+   }
+   // console.log(result, result2, result3)
 }
-console.log('openning = ' + sum1 + ', closing = ' + sum2)
 
-if (sum1 == sum2) {
-    console.log('equal')
-}
-else console.log('not equal')
-
-
+if (result == 0 && result2 == 0 && result3 == 0) console.log('All  Equal')
+else if (result > 0 || result2 > 0 || result3 > 0) console.log('Not equal')
 
 
 /**
- * ================= *Креативное задание===============================
- Имеется зашифрованное предложение 
- “Ybrobrubr brabrrbrebr brtbrhbrebr brbbrebrsbrtbr brQbrAbr brebrvbrebrrbr”
- мы знаем, что оно означает “You are the best QA ever”.
- Нам нужно придумать программу дешифратор.
- */
-//coder
-let text = "You are the best QA ever"
-let newText = ''
-let count = 0
-for (let i = 0; i < text.length; i++) {
-
-    if (count % 2 == 0) {
-        newText = newText + text[i] + "br"
-    }
-    count += 2
-}
-//console.log(newText)
-
-//decoder
-let decodedResult = ''
-for (let i = 0; i < newText.length; i += 3) {
-
-  decodedResult +=  newText[i]
-
-}
-//console.log(decodedResult)
-
-/**
- * ================ 5.Задачка посложнее* =============================
-  Придумайте свой собственный шифр, а также программу, которая будет шифровать и затем дешифровщик к нему
+ * 1.3 Решите задачу с помощью цикла:
+«Улитка ползёт вверх по стене высотой 5 метров. Каждый день она проползает вверх на 3 метра, а каждую ночь съезжает вниз на 2 метра. За сколько дней она доползёт до вершины стены.»
  */
 
-let message = 'Work smarter, not harder! Be on time'
-let keyWord = "Open your shop in the morning"
+let dayDistance = 3
+let nightDown = -2
+let distance = 0
+let days = 0
+let wall = 5
 
-let encriptedMessage = ''
-
-for (let i = 0; i < message.length; i++) {
-
-    for ( let e = 0; e < keyWord.length; e++) {
-
-        if( i == e)   {
-            encriptedMessage = encriptedMessage + message[i] + keyWord[e]
-            keyWord += keyWord[e]
-      }
-        
-    }   
+//1
+while ((distance += dayDistance) <= wall) {
+   days++
+   console.log(` - Current distance at the end of the day for day ${days}  is ${distance} meter(s)`)
+   if (distance == wall) console.log('Ok')
+   else console.log('Go forward!')
+   distance += nightDown
 }
-console.log("Keyword = "+ keyWord)
-console.log('============')
-console.log("Encrypted message = " + encriptedMessage)
-console.log('============')
-
-
-let decriptedMessage = ''
-for (let i = 0; i < encriptedMessage.length; i+=2) {
-    decriptedMessage = decriptedMessage + encriptedMessage[i] 
-}
-console.log("The message = " + decriptedMessage)
-
-
-// //================ inner loop work example================
-// let keyWord2 = "+++"
-// let message2 = 'Work smarter, not harder!Be on time'
-// let encriptedMessage2 = ''
-// let countE = 0
-// let countI = 0
-// for (let i = 0; i < message2.length; i++) {
-
-//     for (let e = 0; e < keyWord2.length; e++) {
-        
-//             encriptedMessage2 = encriptedMessage2 + message2[i] + keyWord2[e]
-        
-//         //else { encriptedMessage = encriptedMessage + message[i] + keyWord[e+1] }
-//         countE++
-//     }
-//     countI++
+// //2
+// if ((distance += dayDistance) <= wall) {
+//   days++
+//   console.log(` - Current distance at the end of the day for day ${days}  is ${distance} meter(s)`)
+//   if (distance == wall) console.log('Ok')
+//   distance += nightDown
 // }
-// console.log(countI, countE)
-// console.log(encriptedMessage2)
-
-//decoder
-// let str2 = ''
-// for (let i = 0; i < newText.length; i += 3) {
-
-//     text2 = text2 + newText[i]
-
+// //3
+// if ((distance += dayDistance) <= wall) {
+//   days++
+//   console.log(` - Current distance at the end of the day for day ${days}  is ${distance} meter(s)`)
+//   if (distance == wall) console.log('Ok')
+//   distance += nightDown
 // }
-// console.log(text2)
+// // //4
+// if ((distance += dayDistance) <= wall) {
+//   console.log('num4')
+//   days++
+//   console.log(` - Current distance at the end of the day for day ${days}  is ${distance} meter(s)`)
+
+//   distance += nightDown
+// }
+// else console.log('Finish')
+
+// if (distance == wall) console.log('Ok')
+
