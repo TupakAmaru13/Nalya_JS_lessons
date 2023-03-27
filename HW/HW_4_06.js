@@ -1,5 +1,7 @@
 
 //====================== HW#4 Part2 ===========================
+//4
+
 let countOpen = 0
 let countClose = 0
 let result = 0
@@ -12,34 +14,35 @@ let result = 0
 //   if (myArr[i] == '(') countOpen += 1
 //   else if (myArr[i] == ')')  countClose += 1
 
-//   result = countOpen - countClose
+//    result = countOpen - countClose
+//    console.log(result)
 //   if (result < 0) {
 //     console.log("Wrong sequance")
 //     break
 //   }
-//   console.log(result)
 // }
 
 // if (countOpen == countClose) {
 //   console.log('equal')
 // }
-// else console.log('not equal')
+// else if(countOpen > countClose) console.log('not equal')
 
 
 
-//=============================== VAR 2
+// //=============================== VAR 2
 
-// for (let i = 0; i < myArr.length; i++) {
+// for (let i in myArr) {
 
 //   if (myArr[i] == '(') result++
 //   else if (myArr[i] == ')') result--
 
+//    console.log(result)
 //   if (result < 0) {
 //     console.log( "Wrong sequance")
 //     break
 //   }
 
-//  // console.log(result)
+//  // 
 // }
 
 // if (result == 0 )  console.log('Equal')
@@ -47,38 +50,29 @@ let result = 0
 
 
 
-//=========================== VAR 3 
+// //=========================== VAR 3 
 
 let result2 = 0
 let result3 = 0
 
-let myArr = ['{', '(', '(', ')', ')', '}', '[', ']', ')']
+let myArr = ['{', '(', '(', ')', ')', '}', '[', ']']
 for (let i in myArr) {
 
    if (myArr[i] == '(') result++
    else if (myArr[i] == ')') result--
 
-   // if (result < 0) {
-   //   console.log("Wrong sequance of '()'")
-   //   break
-   // }
-   //
+   
    if (myArr[i] == '{') result2++
    else if (myArr[i] == '}') result2--
 
-   // if (result2 < 0) {
-   //   console.log("Wrong sequance of '{}'")
-   //   break
-   // }
-   //
    if (myArr[i] == '[') result3++
    else if (myArr[i] == ']') result3--
 
    if (result3 < 0 || result < 0 || result2 < 0) {
-      console.log("Wrong sequance  ")//of '[]'
+      console.log("Wrong sequance ")//of '[]
       break
    }
-   // console.log(result, result2, result3)
+    console.log(result, result2, result3)
 }
 
 if (result == 0 && result2 == 0 && result3 == 0) console.log('All  Equal')
@@ -86,7 +80,7 @@ else if (result > 0 || result2 > 0 || result3 > 0) console.log('Not equal')
 
 
 /**
- * 1.3 Решите задачу с помощью цикла:
+ * 4 Решите задачу с помощью цикла:
 «Улитка ползёт вверх по стене высотой 5 метров. Каждый день она проползает вверх на 3 метра, а каждую ночь съезжает вниз на 2 метра. За сколько дней она доползёт до вершины стены.»
  */
 
@@ -97,13 +91,13 @@ let days = 0
 let wall = 5
 
 //1
-while ((distance += dayDistance) <= wall) {
-   days++
-   console.log(` - Current distance at the end of the day for day ${days}  is ${distance} meter(s)`)
-   if (distance == wall) console.log('Ok')
-   else console.log('Go forward!')
-   distance += nightDown
-}
+// while ((distance += dayDistance) <= wall) {
+//    days++
+//    console.log(` - Current distance at the end of the day for day ${days}  is ${distance} meter(s)`)
+//    if (distance == wall) console.log('Finish!')
+//    else console.log('Go forward!')
+//    distance += nightDown
+// }
 // //2
 // if ((distance += dayDistance) <= wall) {
 //   days++

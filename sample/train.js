@@ -14,10 +14,10 @@
 // const input = prompt("What's your name?"); //optional params
 // console.log(input); 
 
-let rl =""
-rl.question("What is your name? ", function (answer) {
-   console.log(`Oh, so your name is ${answer}`);
-});
+// let rl =""
+// rl.question("What is your name? ", function (answer) {
+//    console.log(`Oh, so your name is ${answer}`);
+// });
 
 // const prompt = require('prompt-sync')();  //for terminal
 // const name = prompt("What's your name?");
@@ -86,28 +86,36 @@ rl.question("What is your name? ", function (answer) {
 
 //reverse number 345-> 543 or -123 -> -321
 
-function reverseNum(num){
-   let str = "" + Math.abc(num)
-   return Math.sign(num)* (str.split('').reverse().join())
-}//                          array        reverse  string
+// function reverseNum(num){
+//    let str = "" + Math.abc(num)
+//    return Math.sign(num)* (str.split('').reverse().join())
+// }//                          array        reverse  string
 
-modules.exports = reverseNum()
-console.log(reverseNum(-76))
+// modules.exports = reverseNum()
+// console.log(reverseNum(-76))
 
-// simple object with some properties
-const coder = {
-   isStudying: false,
-   printIntroduction: function () {
-      console.log(`My name is ${this.name}. Am studying?: ${this.isStudying}.`)
-   }
+// // simple object with some properties
+// const coder = {
+//    isStudying: false,
+//    printIntroduction: function () {
+//       console.log(`My name is ${this.name}. Am studying?: ${this.isStudying}.`)
+//    }
+// }
+// // Object.create() method
+// const me = Object.create(coder);
+
+// // "name" is a property set on "me", but not on "coder"
+// me.name = 'Mukul';
+
+// // Inherited properties can be overwritten
+// me.isStudying = true;
+
+// me.printIntroduction();
+
+
+let str1 = 'Hello'
+let newStr1 = ''
+for (let i = 0; i < str1.length; i++) {
+   newStr1 = newStr1 + str1[i] + '*'
+   console.log(newStr1)
 }
-// Object.create() method
-const me = Object.create(coder);
-
-// "name" is a property set on "me", but not on "coder"
-me.name = 'Mukul';
-
-// Inherited properties can be overwritten
-me.isStudying = true;
-
-me.printIntroduction();

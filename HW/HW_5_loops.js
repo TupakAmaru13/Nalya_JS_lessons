@@ -183,4 +183,3 @@ for (let i = 1; i <= x; i++) {      // i= 1                   i= 2              
   }
 console.log(str)
 
-
