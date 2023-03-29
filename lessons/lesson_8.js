@@ -1,4 +1,37 @@
 //https://www.w3schools.com/js/js_object_definition.asp
+
+
+// //----------- ==; === -------- compare arrays
+
+// let arr = [1, 2];
+// let arr1 = ["a", "b"]
+
+// console.log(arr !== arr1);
+// console.log(arr > arr1);
+// console.log(arr < arr1);
+
+const a = [1, 2, 3];
+const b = [1, 2, 3];
+
+const a1 = [1, 2, 7];
+const b1 = [1, 2, 5];
+let a2 = a1.join()
+let b2 = b1.join()
+
+// console.log(JSON.stringify(a1) == JSON.stringify(b1)) // compare string
+// console.log(b.toString() === a.toString());
+
+// =========================
+
+// let arr = [1, 2, 3];
+// let emptyArr = []
+// //emptyArr.push(1, 5, 7)
+// emptyArr.push(1, 3, 5, "f")
+// emptyArr[0] = "A"
+// console.log(emptyArr)
+// console.log(String(arr), String(emptyArr));
+// console.log(Number(arr), Number(emptyArr));
+// console.log(Boolean(arr), Boolean(emptyArr));
 // ============= Objects =================================
 /**
  * In JavaScript, objects are king. If you understand objects, you understand JavaScript.
