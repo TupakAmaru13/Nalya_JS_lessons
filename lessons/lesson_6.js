@@ -174,7 +174,7 @@ console.log(sum(3, 9));
 
 // console.log(toPay(3.22, 7));
 
-// Если у нас только один аргумент, то круглые скобки 
+// Если у нас только один аргумент, то круглые скобки
 // вокруг параметров можно опустить:
 
 // let double = n => n * 2;
@@ -183,21 +183,21 @@ console.log(sum(3, 9));
 // let greeting = name => ;
 
 
-// Если аргументов нет, круглые скобки будут пустыми, 
+// Если аргументов нет, круглые скобки будут пустыми,
 // но они должны присутствовать:
 
 
 // let hello = () => console.log("Hello!");
 // hello();
 
-// если нужна более сложная стрелочная функция, с несколькими выражениями, 
+// если нужна более сложная стрелочная функция, с несколькими выражениями,
 // то это также возможно, нужно лишь заключить их в фигурные скобки.
-// При этом важно! – в таких скобках для возврата значения нужно 
+// При этом важно! – в таких скобках для возврата значения нужно
 // использовать "return"
 
-// let sum = (a, b) => {  
+// let sum = (a, b) => {
 //   let result = a + b;
-//   return result; 
+//   return result;
 // };
 // console.log(sum(4, 6));
 
@@ -208,8 +208,8 @@ console.log(sum(3, 9));
 //  ...args  ==>  «собери оставшиеся параметры и положи их в массив args»
 // ==========================
 
-// function showArg(...args) { 
-//   console.log(args); 
+// function showArg(...args) {
+//   console.log(args);
   
 //   let sum = 0;
 //   for(let i = 0; i < args.length; i++){
@@ -223,7 +223,7 @@ console.log(sum(3, 9));
 // =============================================
 //                  Methods
 //=========================================================
-//Methods: Math.round(), Math.floor(); Math.ceil(); Math.trunc(); 
+//Methods: Math.round(), Math.floor(); Math.ceil(); Math.trunc();
 
 //=========================================================
 //Math.round() <==== матеиатическое округление
@@ -238,19 +238,37 @@ console.log(sum(3, 9));
 //   console.log(a, b, c, d, e, f);
 // })();
 
-// let c = Math.round(5.789 * 10) / 10; 
+// let c = Math.round(5.789 * 10) / 10;
 // console.log(c);
 
 //=========================================================
 //Math.floor() <==== округляет вниз ("к полу") в меньшую сторону
 //Round a number downward to its nearest integer
 
-(function myFunction() {
-  var a = Math.floor(0.406);      //
-  var b = Math.floor(0.909);      //
-  var c = Math.floor(5.00789);    // 5
-  var d = Math.floor(5.412345);   //  5
-  var e = Math.floor(-5.10234);   //  -6
-  var f = Math.floor(-5.99999);   //  -6
-  console.log(a, b, c, d, e, f);
-})();
+// (function myFunction() {
+//   var a = Math.floor(0.406);      //
+//   var b = Math.floor(0.909);      //
+//   var c = Math.floor(5.00789);    // 5
+//   var d = Math.floor(5.412345);   //  5
+//   var e = Math.floor(-5.10234);   //  -6
+//   var f = Math.floor(-5.99999);   //  -6
+//   console.log(a, b, c, d, e, f);
+// })();
+
+function printMyArray(a ) {
+  //let newStr1
+  for (let i = 0; i < a.length; i++) {
+    console.log(a[i]) //newStr1 += a[i] + '*' 
+  }
+  // console.log(newStr1)
+}
+let b = [5, 8, 9]
+ printMyArray(b)
+// printMyArray.apply({}, [7, 7, 7])
+
+// function printMyArray(a ) {
+//   let newStr1 = a[0]+10
+  
+//   return console.log(newStr1)
+// }
+// printMyArray([5, 8, 9])
