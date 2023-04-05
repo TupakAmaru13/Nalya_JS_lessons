@@ -168,18 +168,24 @@ It is a common practice to declare objects with the const keyword.
 
 //  console.log(obj);
 
-// ================== Создание объекта с использованием переменной  =====
 
+
+// ================== Создание объекта с использованием переменной  =====
+//let key = prompt("Что вы хотите узнать о пользователе?", "name");
 // let name1 = "Anna";
 // let age = 17
 // const user = {
-//   [name1]: age
+//    [name1]: "Olya",
+//    age: age,
    
 // };
 // console.log(user);
 
+
+
 // ============================================================
 // Обращение к свойствам объекта
+
 // let arr = [1,3,5,7]
 // const customers = [
 //   {               //   !!! Array[0]
@@ -258,7 +264,7 @@ It is a common practice to declare objects with the const keyword.
 // };
 // console.log(obj);
 
-//  console.log("firstName" in obj);
+// console.log("firstName" in obj);
 // console.log("first" in obj);
 // console.log(undefined in obj);
 // console.log( "age1" in obj);  // can't check by value

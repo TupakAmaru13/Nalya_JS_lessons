@@ -6,32 +6,41 @@
 // let arr = [1, 2];
 // let arr1 = ["a", "b"]
 
-// console.log(arr !== arr1);
+// console.log(arr == arr1);
 // console.log(arr > arr1);
 // console.log(arr < arr1);
 
-const a = [1, 2, 3];
-const b = [1, 2, 3];
+// const a = [1, 2, 3];
+ const b = [1, 2, 3];
 
-const a1 = [1, 2, 7];
-const b1 = [1, 2, 5];
-let a2 = a1.join()
-let b2 = b1.join()
+// const a1 = [1, 2, 7];
+// const b1 = [1, 2, 6];
+// let a2 = a1.join()
+// let b2 = b1.join()
 
 // console.log(JSON.stringify(a1) == JSON.stringify(b1)) // compare string
+//  console.log(JSON.stringify(a1))
 // console.log(b.toString() === a.toString());
+// let z = b.toString()
+//let x = JSON.stringify(b)
 
+ //console.log(x.length)
 // =========================
 
-// let arr = [1, 2, 3];
-// let emptyArr = []
-// //emptyArr.push(1, 5, 7)
+//let arr = [1, 2, 3];
+let emptyArr = []
+// emptyArr.push(1, 5, 7)
 // emptyArr.push(1, 3, 5, "f")
 // emptyArr[0] = "A"
 // console.log(emptyArr)
-// console.log(String(arr), String(emptyArr));
-// console.log(Number(arr), Number(emptyArr));
+// let str2 = 
+// console.log(String(arr), " /", String(emptyArr) );
+// console.log(Number(...arr), Number(emptyArr));
 // console.log(Boolean(arr), Boolean(emptyArr));
+
+
+
+
 // ============= Objects =================================
 /**
  * In JavaScript, objects are king. If you understand objects, you understand JavaScript.
@@ -65,14 +74,15 @@ It is a common practice to declare objects with the const keyword.
 //   job: "QA engineer",
 //   isAdmin: false
 // }
-
+// let arrNew = [["name", 'Olya']["age", 22]]
+// // arrNew[0][1]
 // const person2 = {
 //     id: '02',
 //     personalInfo: {
-//       name: {
-//         first: 'Jane',
-//         last: 'Dow',
-//       },
+//        name: {
+//           first: 'Jane',
+//           last: 'Dow',
+//        },
 //       dob: '01/01/1990',
 //       "contactInfo": {
 //         phone: '+123456789',
@@ -83,9 +93,10 @@ It is a common practice to declare objects with the const keyword.
 //         }
 //       },
 //     },
-//     purchases: [null],
+//    purchases: [null],
+//    car: "Suzuki"
 //   }
-// console.log(person2.personalInfo.contactInfo);
+// console.log(person2['personalInfo']['name'].last);
 
 //  console.log(typeof person2);
 
@@ -95,7 +106,7 @@ It is a common practice to declare objects with the const keyword.
 
 // ===================  Обьявление обьекта  ===========================
 
-//let obj = new Object();
+// let obj = new Object();
 // let user = {};
 
 // let obj = {
@@ -104,7 +115,8 @@ It is a common practice to declare objects with the const keyword.
 //   "isAdult": true,
 //   "salary": undefined,
 //   4: null,
-//   address : "Houston",
+//   address: [],
+//   myObj: {}
 // };
 // console.log(obj);
 
@@ -121,31 +133,33 @@ It is a common practice to declare objects with the const keyword.
 // let user1 = {
 //   name: "John",
 //   age: 30,
-//   'high school': true,
+//    highSchool: true,
 // }
 
-// console.log("original ", user );
+// console.log("original ", user1 );
 
 // //value of age и name изменено:
-// user.age = 20;
-// user.name = 'Bill';
-// console.log("modified ", user);
+//  user1.age = 20;
+//  user1.name = 'Bill';
+//  console.log("modified ", user1);
+// console.log(user1[0])
 
-// //добавлено свойство address:
-// user.address = {
+
+// // //добавлено свойство address:
+// user1.address = {
 //   city: 'SF',
 //   state: 'CA',
 //   country: 'USA',
 // }
-// user. hello = "Hi"
-// console.log("added new key - address and hello ", user);
-//console.log(user.address.state);
+// user1['hello'] = "Hi"
+// console.log("added new key - address and hello ", user1);
+// console.log(user1.address.state);
 
-// //============================================
-// //оператор delete:
+// // //============================================
+// // //оператор delete:
 
-//  delete user.address.country;     //удаление свойства country
-//  console.log("deleted  ",user);
+//  delete user1.address.country;     //удаление свойства country
+//  console.log("deleted  ", user1 );
 
 
 // ====================  обращение к свойствам  =============================
@@ -168,15 +182,15 @@ It is a common practice to declare objects with the const keyword.
 // //let arr = [4, "g", 66]
 //  console.log(person["name"]); //arr[0]
 //  console.log(person['age']);
-//  console.log(person["likes cats"]);
+  //console.log(person["likes cats"]);
 
 
 // ==================  Добавление свойства(property)  ================================
 
 
 //создаем объект
-//  const obj = {};
-
+//   const obj = {};
+// console.log(obj)
 // // //присваиваем значения
 //  obj.name = 'Jess'; //через точку arr[0]= "jess"
 // console.log(obj);
@@ -187,8 +201,9 @@ It is a common practice to declare objects with the const keyword.
 //  obj['age'] = 28;
 //  console.log(obj);
 
-// let carModel = 'mini'; //через переменную
-// obj[carModel] = 1;
+// let carModel = 'car'; //через переменную
+// let num = 2
+// obj[carModel] = num;
 // //obj['carModel'] = 3;
 //  console.log(obj);
 
@@ -206,55 +221,56 @@ It is a common practice to declare objects with the const keyword.
 // let name1 = "Anna";
 // let age = 17
 // const user = {
-//   [name1]: age
+//    [name1]: name1,
+//    age: age
    
 // };
 // console.log(user);
 
-// ============================================================
+// // ============================================================
 // Обращение к свойствам объекта
-// let arr = [1,3,5,7]
-// const customers = [
-//   {               //   !!! Array[0]
-//     id: '01',                //
-//     personalInfo: {  name: { first: 'John', last: 'Dow'}, },},
+let arr = [1,3,5,7]
+const customers = [
+  {               //   !!! Array[0]
+    id: '01',                //
+    personalInfo: {  name: { first: 'John', last: 'Dow'}, },},
 
-//   {                //    !!! Array[1]
-//     id: '02',                //
-//     personalInfo: {          //
-//       name: {                //
-//         first: 'Jane',       //
-//         last: 'Dow',         //
-//       },
-//       dob: '01/01/1990',         //
-//       "contactInfo": {           //
-//         phone: '+123456789',     //
-//         email: [1,2,3],             //
-//         address: null,           //
-//       },
-//     },
-//     purchases: [null],           //
-//   }];
+  {                //    !!! Array[1]
+    id: '02',                //
+    personalInfo: {          //
+      name: {                //
+        first: 'Jane',       //
+        last: 'Dow',         //
+      },
+      dob: '01/01/1990',         //
+      "contactInfo": {           //
+        phone: '+123456789',     //
+        email: [3,7,[4,8]],             //
+        address: null,           //
+      },
+    },
+     purchases: [{two: 2},6, 3],           //
+  }];
 
 // 1. Свойства 1-го уровня -array elements
-//  console.log(customers.length);
-//  console.log(customers[0]);
-//  console.log(customers[1]);
- //console.log(customers[2]);
+//   console.log(customers.length);
+//   console.log(customers[0]);
+//   console.log(customers[1]);
+//   console.log(customers[2]);
 
-// 2. Свойства 2-го уровня -from array to object
-//  console.log(customers[0].id);
-//  console.log(customers[1]['id'])
+// // 2. Свойства 2-го уровня -from array to object
+// //   console.log(customers[0].id);
+// //   console.log(customers[0]['id'])
 
-// 3. Свойства 3-го уровня
+// // 3. Свойства 3-го уровня
 //  console.log(customers[1].personalInfo.name);
-//  console.log(customers[1].personalInfo.dob);
+//  console.log(customers[1].personalInfo['dob']);
 //  console.log(customers[1]['personalInfo']['dob']);
 
 // 4. Свойства 4-го уровня
-// console.log(customers[1].personalInfo.name.first);
-//  console.log(customers[1].personalInfo.contactInfo.email[2]);
-//  console.log(customers[1]['personalInfo']['contactInfo']['email']);
+//  console.log(customers[1].personalInfo.name.first);
+//  console.log(customers[1].personalInfo.contactInfo.email);
+//  console.log(customers[1]['personalInfo']['contactInfo']['email'][1]);
 
 // ====================  Проверка существования свойства  ======================================
 
@@ -267,7 +283,7 @@ It is a common practice to declare objects with the const keyword.
 // Это позволяет просто проверить существование свойства:
 
 // let user = {
-//    newKey: undefined,
+//    newKey: 'MY Key',
 // };
 // console.log(user)
 // console.log(user.age);
@@ -281,20 +297,23 @@ It is a common practice to declare objects with the const keyword.
 
 // ===== через оператор in check the key
 // let obj = {
-//   firstName: 'Sofia',
-//   lastName: 'I.',
-//   age: 35,
-//   language: 'Java',
-//   newKey: undefined,
-//   9: false,
-//   job: {name1 : "Olga", age1 : 23},
+//    firstName: 'Sofia',
+//    lastName: 'I.',
+//    age: 35,
+//    language: 'Java',
+//    newKey: undefined,
+//    9: false,
+//    job: {
+//       name1: "Olga",
+//       newObj: { age1: 23 }
+//    },
 // };
-// console.log(obj);
+// //console.log(obj);
 
-//  console.log("firstName" in obj);
-// console.log("first" in obj);
-// console.log(undefined in obj);
-// console.log( "age1" in obj);  // can't check by value
+// //   console.log("firstName" in obj);
+// //  console.log("first" in obj);
+// //  console.log(undefined in obj);
+//  console.log( 'age1' in obj.job.newObj);  // can't check by value
 
 // console.log(obj.newKey === undefined);
 
@@ -366,12 +385,12 @@ It is a common practice to declare objects with the const keyword.
 
 // for(let key in obj){
 //   // ключи
-//   //console.log(key);  // name, age, isAdmin
+//   console.log(key);  // name, age, isAdmin
 
 // //   // значения ключей
-//  //  console.log(obj[key]); // John, 30, true   /arr[i]
+//  //console.log(obj[key]); // John, 30, true   /arr[i]
 
-//   console.log(key + ": " + obj[key]);
+//   //console.log(key + ": " + obj[key]);
 // }
 
 
@@ -382,12 +401,12 @@ It is a common practice to declare objects with the const keyword.
 //   Pete: 130
 // };
 
-// let sum = 0;
+//  let sum = 0;
 // for(let key in salaries) { 
 //    sum += salaries[key];
 // }
 
-// console.log(sum); // 390
+//  console.log(sum); // 390
 
 
 // let obj = {
@@ -435,31 +454,38 @@ It is a common practice to declare objects with the const keyword.
 // Object.entries(obj) – возвращает массив пар [ключ, значение].
 
 
-// let user = {
-//   name: "John",
-//   age: 30,
-//   isAdmin: true,
-//   language: "JavaScript",
-// };
+let user = {
+  name: "John",
+  age: 30,
+  isAdmin: true,
+  language: "JavaScript",
+};
 
-// console.log("Keys: ", Object.keys(user));    //выводит ключи (keys)
-// console.log("Values: ", Object.values(user));  //выводит значения (values)
+//console.log("Keys: ", Object.keys(user));    //выводит ключи (keys)
+//console.log("Values: ", Object.values(user));  //выводит значения (values)
 // console.log(Object.entries(user)); //выводит массив массивов
 
 // ======== перебор в цикле
 //console.log('===========');
-// let user = {
-//   name: "John",
-//   age: 30,
-//   language: 'en',
-//   home: 'apartment',
-//   number: 6
-// };
+let user3 = {
+  name: {name: "Kate", age2 : 22},
+  age: 30,
+  language: 'en',
+  home: 'apartment',
+  number: 6
+}
 
-// // // перебор значений -checking values
-// for (let i of Object.entries(user)) {
-//   console.log(i); 
-// }
+// // перебор значений -checking values
+for (let i of Object.values(user3.name)) {
+  console.log(i); 
+}
+
+
+
+
+
+
+
 
 
 // =======

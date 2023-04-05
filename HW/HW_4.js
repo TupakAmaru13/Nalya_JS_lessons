@@ -20,35 +20,35 @@
 Для n = 10 результат должен быть 2,3,5,7.
  */
 //1)
- let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 19, 20]
-//let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-let isPrime = ''
-//let primeNumbers = []
-let primeNumbers = ''
-for (let i = 1; i < num.length; i++) {
-    if (num[i] == 1) {
-        isPrime = num[i] + " is not prime"
-    }
-    else if (num[i] % 2 === 0 && num[i] != 2) {
-        isPrime = i + " is not prime"
-    }
-    else if (num[i] != 3 && num[i] % 3 === 0) {
-        isPrime = i + " is not prime"
-    }
-    else if (num[i] != 5 && num[i] % 5 === 0) {
-        isPrime = i + " is not prime"
-    }
-    else if (num[i] != 7 && num[i] % 7 === 0) {
-        isPrime = num[i] + " is not prime"
-    }
-    else {
-        isPrime = '         ' + num[i] + " is prime"
-        primeNumbers = primeNumbers + num[i] + ' '
+//  let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 19, 20]
+// //let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let isPrime = ''
+// //let primeNumbers = []
+// let primeNumbers = ''
+// for (let i = 1; i < num.length; i++) {
+//     if (num[i] == 1) {
+//         isPrime = num[i] + " is not prime"
+//     }
+//     else if (num[i] % 2 === 0 && num[i] != 2) {
+//         isPrime = i + " is not prime"
+//     }
+//     else if (num[i] != 3 && num[i] % 3 === 0) {
+//         isPrime = i + " is not prime"
+//     }
+//     else if (num[i] != 5 && num[i] % 5 === 0) {
+//         isPrime = i + " is not prime"
+//     }
+//     else if (num[i] != 7 && num[i] % 7 === 0) {
+//         isPrime = num[i] + " is not prime"
+//     }
+//     else {
+//         isPrime = '         ' + num[i] + " is prime"
+//         primeNumbers = primeNumbers + num[i] + ' '
 
-    }
-     console.log(isPrime)
- }
-console.log("These are: ", primeNumbers)
+//     }
+//      console.log(isPrime)
+//  }
+// console.log("These are: ", primeNumbers)
 
 
 // 2) inner loop example for this problem
@@ -162,26 +162,26 @@ console.log("These are: ", primeNumbers)
 //количество элементов и последовательность может быть разной.
 //Нужно выяснить, у каждой ли скобки есть соответствующая пара(открывающая и закрывающая).
 
-// let sum1 = 0
-// let sum2 = 0
+let sum1 = 0
+let sum2 = 0
 
-// //let str = ['(', ')', '(', ')', ')']
-// let str = ['(', ')', '(', ')', ')', '(',  '(',  ')', 2, 'a']
-// for (let i = 0; i < str.length; i++) {
+//let str = ['(', ')', '(', ')', ')']
+let str = ['(', ')', '(', ')', ')', '(',  '(',  ')', 2, 'a']
+for (let i = 0; i < str.length; i++) {
 
-//     if (str[i] == '(') {
-//         sum1 += 1
-//     }
-//     else if (str[i] == ')') {
-//         sum2 += 1
-//     }
-// }
-// console.log('openning = ' + sum1 + ', closing = ' + sum2)
+    if (str[i] == '(') {
+        sum1 += 1
+    }
+    else if (str[i] == ')') {
+        sum2 += 1
+    }
+}
+console.log('openning = ' + sum1 + ', closing = ' + sum2)
 
-// if (sum1 == sum2) {
-//     console.log('equal')
-// }
-// else console.log('not equal')
+if (sum1 == sum2) {
+    console.log('equal')
+}
+else console.log('not equal')
 
 
 
