@@ -18,8 +18,9 @@ export default class SandwichClass {
          return 'Turkey Sandwich'
       }
    }
-
+ 
    showSandwichChoice() {
+    
       if (this.topping == 'salmon') {
          console.log(`You choosed ` + this.getSandwichName())
       }
@@ -38,7 +39,9 @@ export default class SandwichClass {
    }
 
 }
-
+let sandwich = new SandwichClass('white', "swiss", "salmon")
+//let name = sandwich.getSandwichName()
+console.log(sandwich.getSandwichName())
 
 // class Order extends SandwichClass {
 //    constructor(bread, cheese, topping, orderNumber) {

@@ -1,3 +1,4 @@
+//import SandwichClass from "./SandwichClass.js"
 import SandwichClass from "./SandwichClass.js"
 
 class Order extends SandwichClass {
@@ -21,12 +22,12 @@ order.setPrice()
 
 
 //=========================================================
-import showSandwichIngridients ,  { turkeySandwich as go }  from './Sandwich.js'
-//import from './Sandwich.js'
+// import   { turkeySandwich as TS  }  from './Sandwich.js'
+// import showSandwichIngridients from './Sandwich.js'
 
-console.log(go)
+//  console.log(TS)
 
-showSandwichIngridients("salmon")
+//  showSandwichIngridients("salmon")
 
 //js module is nothing than peace of code that can be shared this other files
 // it can be class, function, variable or object
