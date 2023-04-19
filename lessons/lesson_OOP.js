@@ -121,3 +121,15 @@ console.log(person.occupation)
 
 
 
+
+//example 2
+// let Person = function (pName) {  //old class
+//    let name = pName;
+
+//    this.getName = function () {
+//       return name;
+//    }
+// }
+
+// let person = new Person("Neelesh");  // create an instance of person class
+// console.log(person.getName());

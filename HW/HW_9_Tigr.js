@@ -50,15 +50,15 @@ class Mammals extends Animal {
    }
    
    showBodyParts() {
-      console.log(`${this.name} has ${this.legs} legs, ${this.skin}`)
+      console.log(`${this.name} has ${this.legs} legs, ${this.skin}.`)
    }
 
    breath(){
-      console.log(`This ${this.name} breath with ${this.lungs}`)
+      console.log(`This ${this.name} breath with ${this.lungs}.`)
    }
 
    feedKids(){
-      console.log(`This animal feeds its kids milk`)
+      console.log(`This animal feeds its kids milk.`)
    }
 
    reproduceType(){
@@ -91,7 +91,7 @@ class Predators extends Mammals {
    }
 
    showBodyParts() {
-      console.log(`${this.name} has ${this.legs} legs, ${this.skin} and sharp ${this.claws} and ${this.fangs}`)
+      console.log(`${this.name} has ${this.legs} legs, ${this.skin} and sharp ${this.claws} and ${this.fangs}.`)
    }
 
   
@@ -99,7 +99,7 @@ class Predators extends Mammals {
 let predator1 = new Predators("predator", 'green')
 console.log(predator1.name.toUpperCase());
 console.log(predator1.getName())
-console.log(predator1.eyes);
+//console.log(predator1.eyes);
 predator1.canEat()
 predator1.showBodyParts()
 
@@ -110,12 +110,14 @@ class Cats extends Predators {
    //ovberrides cunstructor
    constructor(name, eyes, nikName) {
       super(name, eyes)
-      this.nikName = nikName
-     
+      this.nikName = nikName  
    }
 
    moves(){
       console.log(`${this.name} moves softly`)
+   }
+   sayMeow() {
+      console.log(`This ${this.name} says meow`)
    }
    
 }
@@ -126,10 +128,13 @@ console.log(tiger.nikName.toUpperCase())
 console.log(tiger.eyes);
 tiger.canEat()
 
-tiger.setSkin("red fur with black stripes")
+// you can use two ways to set a property
+//tiger.setSkin("red fur with black stripes")//1
+tiger.skin = "red fur"//2
 console.log(tiger.skin)
 tiger.showBodyParts()
 tiger.moves()
+tiger.sayMeow()
 
 
 

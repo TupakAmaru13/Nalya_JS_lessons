@@ -10,24 +10,24 @@
 
 // promise1.then((value) => {
 //    console.log(value);
-//    // expected output: "foo"
+//    //expected output: "foo"
 // });
 
-// //promice methods
-// // promise1.then(() => { });    //in then we operate with resolve
-// // promise1.catch();         //catch will called if called reject, then will be ignored
+// // //promice methods
+// // // promise1.then(() => { });    //in 'then' we operate with resolve
+// // // promise1.catch();         //'catch' will called if called reject, 'then' will be ignored
 
-// console.log(promise1);
+// console.log(result);
 // expected output: [object Promise]
 
 //-----------------------------------------------
-// function someFunction() {
-//    return new Promise((resolve, reject) => {
-//       setTimeout(() => {
-//          resolve('Hello');
-//       }, 1000);
-//    });
-// }
+function someFunction() {
+   return new Promise((resolve, reject) => {
+      setTimeout(() => {
+          resolve('Hello_1000');
+      }, 1000);
+   });
+}
 //what is happening
 //someFunction()->function ->{
 //    value: undefined
@@ -37,13 +37,17 @@
 
 // someFunction()
 //    .then(console.log)
-//    .catch(console.error)
+ //  .catch(console.error)
 
+
+
+
+// //var2
 function someFunction() {
    return new Promise((resolve, reject) => {
       setTimeout(() => {
          resolve('Hello');
-      }, 5000);
+      }, 10);
    });
 }
 
@@ -56,15 +60,15 @@ someFunction()
    .catch(console.error)
    .finally(()=>{console.error('this is an error')})
 
-let str = "Hello!"
-let ms = 10
-function delay() {
-   return new Promise((resolve) => setTimeout(() => {
-      resolve("helo");
-   }, 10));
-}
+// let str = "Hello!"
+// let ms = 10
+// function delay() {
+//    return new Promise((resolve) => setTimeout(() => {
+//       resolve("hello");
+//    }, 10));
+// }
 
-delay(ms, str).then(response => {
-   console.log(response)
-   return response + '!'
-   })
+// delay(ms, str).then(response => {
+//    console.log(response)
+//    return response + '!'
+//    })
