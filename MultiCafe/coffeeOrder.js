@@ -1,7 +1,7 @@
 import Coffee from "./coffee.js";
 
 
-export default class CoffeeOrder extends Coffee {
+class CoffeeOrder extends Coffee {
    constructor(orderNumber, coffeeName, cupSize, isSweet){
       super(coffeeName, isSweet)
       this.orderNumber = orderNumber
@@ -29,3 +29,4 @@ export default class CoffeeOrder extends Coffee {
 
 }
 
+export default CoffeeOrder

@@ -1,6 +1,6 @@
 {
    
-   "type": "commonjs",
+   "type": "module",
 
    "dependencies": {
 
