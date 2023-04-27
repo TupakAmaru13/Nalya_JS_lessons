@@ -1,3 +1,3 @@
 # JS_Lessons
 
-These are study files for beginners
+These are study JS files for beginners QA Automation
