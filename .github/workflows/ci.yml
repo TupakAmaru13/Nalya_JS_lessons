@@ -26,7 +26,10 @@ jobs:
 
     - name: Npm install
       run: npm ci
-
+      
+    - name: Npm Test
+      run: npm test
+      
     - name: Npx run
       run: npx cypress run --headless
 
