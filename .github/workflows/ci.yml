@@ -2,8 +2,11 @@
 name: CI
 
 on:
+  push:
+    branches:
+     - master
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   run-test:
@@ -22,8 +25,11 @@ jobs:
         cache: 'npm'
 
     - name: Npm install
-      run: npm ci
-
+      run: npm install
+      
+    - name: Npm Test
+      run: npm test
+      
     - name: Npx run
       run: npx cypress run --headless
 
