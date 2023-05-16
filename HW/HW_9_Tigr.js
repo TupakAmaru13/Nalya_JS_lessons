@@ -123,7 +123,6 @@ console.log("\nclass Cat ======================\n")
 
 
 class Cat extends Predator{
-   //ovberrides cunstructor
    constructor(name, eyesColor, nikName) {
       super(name, eyesColor)
       this.nikName = nikName  
@@ -134,7 +133,11 @@ class Cat extends Predator{
       console.log(`${newName} moves softly.`)
    }
    sayMeow() {
-      console.log(`This ${this.name} says meow.`)
+      let sound = 'meow'
+      if (this.name == 'tiger') {
+         sound = 'roar'
+      }
+      console.log(`This ${this.name} says ${sound}.`)
    }
    
 }
